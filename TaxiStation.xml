@@ -1,0 +1,14 @@
+<taxiStation name = "Maxim">
+    <car>
+        <brand>Toyota</brand>
+        <cost>10000</cost>
+        <speed>
+            <maxSpeed>200</maxSpeed>
+        </speed>
+        <consumption>
+            <fuel>13.0</fuel>
+        </consumption>
+        <passengerSeat>5</passengerSeat>
+        <type>A</type>
+    </car>
+</taxiStation>
