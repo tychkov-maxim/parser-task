@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="taxiStation" type="taxiStationType"/>
+  <xs:complexType name="carType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="brand"/>
+      <xs:element type="xs:string" name="cost"/>
+      <xs:element type="speedType" name="speed"/>
+      <xs:element type="consumptionType" name="consumption"/>
+      <xs:element type="xs:string" name="passengerSeat"/>
+      <xs:element type="xs:string" name="type"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="consumptionType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="fuel"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="speedType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="maxSpeed"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="taxiStationType">
+    <xs:sequence>
+      <xs:element type="carType" name="car"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name"/>
+  </xs:complexType>
+</xs:schema>
