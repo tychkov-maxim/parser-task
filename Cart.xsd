@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+        targetNamespace="http://epam.com/cart"
+        xmlns:tm="http://epam.com/cart"
+        xmlns="http://www.w3.org/2001/XMLSchema">
+
+<element name="cart" type="tm:Cart"/>
+
+<complexType name="Cart">
+  <sequence>
+    <element name="goods" type="tm:Goods" minOccurs="0" maxOccurs="unbounded" />
+  </sequence>
+</complexType>
+
+<complexType name="Goods">
+  <sequence>
+    <element name="id" type="positiveInteger"/>
+    <element name="name" type="string"/>
+    <element name="description" type="string"/>
+    <element name="price" type="positiveInteger"/>
+    <element name="groupId" type="positiveInteger"/>
+  </sequence>
+</complexType>
+
+<simpleType name="ISBN">
+  <restriction base="string">
+    <pattern value="([0-9]{3})-([0-9])-([0-9]{2})-([0-9]{6})-([0-9])"/>
+  </restriction>
+</simpleType>
+
+</schema>

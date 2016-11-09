@@ -1,0 +1,11 @@
+<cart xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://epam.com/cart"
+      xsi:schemaLocation="http://epam.com/cart Cart.xsd">
+    <goods>
+        <id>55</id>
+        <name>hello</name>
+        <description>World</description>
+        <price>123</price>
+        <groupId>1</groupId>
+    </goods>
+</cart>
