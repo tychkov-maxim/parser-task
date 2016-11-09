@@ -18,4 +18,8 @@ public class Cart extends BaseEntity{
         return new ArrayList<Goods>(cart);
     }
 
+    public boolean addGoods(Goods goods){
+        return cart.add(goods);
+    }
+
 }
